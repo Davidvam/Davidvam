@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Registrarme</title>
+</head>
+ <style>
+     body{
+    font-family:'Mulish', sans-serif; 
+   margin: 0; 
+   
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color:#21C08B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.login{
+    background:linear-gradient(#21C08B,#8F57FD);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+
+}
+.login__container{
+    background-color:rgba(255,255,255, 0.1) ;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width:300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form{
+    display: flex;
+    flex-direction:column;
+}
+.login__container--form label{
+    font-size: 14px;
+}
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+
+}
+.login__container--social-media > div:hover{
+    text-decoration: underline;
+}
+.login__conteiner--register{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+.login__conteiner--register{
+    font-size: 16pxpx;
+    color: white;
+    font-weight: borld;
+    text-decoration: none;
+    
+}
+.login__conteiner--register:hover{
+    cursor: pointer;
+
+}
+.input{
+    background-color:transparent ;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:2px solid white;
+    font-family:'Mulish', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height:50px;
+}
+::placeholder{
+    color: white;
+}
+.button{
+    background-color:rgba(255,255,255,0.1) ;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+
+.footer{
+    display: flex;
+    align-items:center;
+    height: 100px;
+    width: 100%;
+    background:#8F57FD;
+    
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14;
+    padding-left: 30px;
+    
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+ </style>
+<body>
+    <!--Logo platzi-->
+    <header class="header">
+        <img class="header__img" src="/Assets/logo-platzi-video-BW2.png"  alt="">
+    </header>  
+    <section class="login"> 
+        <section class="login__container"> 
+            <h2>Registrate</h2>
+            <form class="login__container--form">
+                <input type="text" class="input" placeholder="Nombre">
+                <input type="text" class="input" placeholder="Correo">
+                <input type="pasword" class="input" placeholder="Contraseña">
+                <button class="button">Registrarme</button>
+            </form>
+            <a class="login__conteiner--register">Iniciar sesion</a>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaracion de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
